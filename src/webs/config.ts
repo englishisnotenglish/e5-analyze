@@ -1,4 +1,8 @@
-export default {
+interface Config {
+    stats: Array<any>;
+}
+
+const config: Config = {
     stats: [
         {
             url: 'http://www.stats.gov.cn/tjsj/zxfb/index.html',
@@ -6,3 +10,5 @@ export default {
         },
     ],
 }
+
+export default config

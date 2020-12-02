@@ -1,9 +1,11 @@
-import request from 'superagent'
+// @ts-ignore
+import * as request from 'superagent'
+
 
 // 主要目前还是实现get方法，其他的暂时不实现
 interface SuperAgent {
     setHeader(header?: any): any;
-    get(url: string, query: any): Promise<any>;
+    get(url: string, query?: any): Promise<any>;
     post(url: string, params: any): Promise<any>;
     // put(): Promise<any>;
     // delete(): Promise<any>;
@@ -34,14 +36,14 @@ export default class Agent implements SuperAgent {
             'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
         };
 
-        return this.request.setHeader(config)
+        return this.request.get('').set(config)
     }
 
-    post(url, params) {
+    post(url: string, params: any) {
         return request.post(url).send(params)
     }
 
-    get(url: string, query: any) {
+    get(url: string, query?: any) {
         return request.get(url).query(query)
     }
 }

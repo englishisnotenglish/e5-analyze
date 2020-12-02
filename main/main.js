@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const isDev = require('electron-is-dev') || true;
+const Controller = require('../src/factory/Controller')
 
 function createWindow () {
   const win = new BrowserWindow({

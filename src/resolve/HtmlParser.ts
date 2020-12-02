@@ -1,3 +1,4 @@
+// @ts-ignore
 import cheerio from 'cheerio'
 
 interface Resolve {
@@ -9,8 +10,10 @@ interface Resolve {
 export default class HtmlParser implements Resolve {
     private parser = cheerio
 
-    constructor(html: string) {
-        this.loadHtml(html)
+    constructor(html?: string) {
+        if (html) {
+            this.loadHtml(html)
+        }
     }
 
     loadHtml(html: string) {

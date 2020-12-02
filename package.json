@@ -10,6 +10,7 @@
     "cheerio": "^1.0.0-rc.3",
     "cross-env": "^7.0.2",
     "electron-is-dev": "^1.2.0",
+    "esm": "^3.2.25",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -46,5 +47,16 @@
     "electron-builder": "^22.9.1",
     "typescript": "^4.1.2",
     "wait-on": "^5.2.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/englishisnotenglish/e5-analyze.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/englishisnotenglish/e5-analyze/issues"
+  },
+  "homepage": "https://github.com/englishisnotenglish/e5-analyze#readme"
 }

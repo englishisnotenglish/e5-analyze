@@ -1,4 +1,4 @@
-import Agent from '../network/SuerAgent'
+import Agent from '../network/SuperAgent'
 import HtmlParser from '../resolve/HtmlParser'
 import config from '../webs/config'
 
@@ -54,5 +54,3 @@ export default class Controller {
         this.runWeb(config['stats'])
     }
 }
-
-module.exports = Controller

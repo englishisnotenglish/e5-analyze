@@ -18,12 +18,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react"
   },
   "include": [
     "src",
     "backend/webs",
     "backend/resolve",
     "backend/network"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }

@@ -1,5 +1,5 @@
 // @ts-ignore
-import * as request from 'superagent'
+import request from 'superagent'
 
 
 // 主要目前还是实现get方法，其他的暂时不实现
